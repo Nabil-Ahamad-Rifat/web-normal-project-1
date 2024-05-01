@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+a{
+  text-decoration: none;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  display: flex;
+}
+#left{
+  width: 40%;
+  height: 100vh;
+  background-color: #7ec9c3;
+  /* position: relative; */
+
+}
+#right{
+  width: 60%;
+  height: 100vh;
+}
+#right-top{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+#right-top-left{
+  height: 100%;
+  width: 50%;
+  background-image:url(../img/daniel-lincoln-5AiN3pLyJLU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+#right-top-right{
+  height: 100%;
+  width: 50%; 
+  background-image: url(../img/nicholas-kampouris-ZIW_wcbjKLw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#right-botom{
+  height: 50%;
+  width: 100%;
+  background-image: url(../img/charlesdeluvio-tIKgE_mG6yM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#leftnav{
+  width: 100%;
+  padding: 20px 30px ;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#leftnav i{
+  margin: 0px 20px 0px 10px;
+  font-size: 23px;
+}
+#leftNavRight{
+  display: flex;
+  align-items: center;
+}
+#leftNavRight a{
+  margin: 0px 10px 0px 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.9;
+
+
+}
+#leftNavRight a i{
+  margin: 0px 10px 0px 10px;
+  margin-right: 3px;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+}
+/*        =========middel part is start======  */
+#left #textCenter{
+ 
+ margin: auto;
+ padding-top: 150px;
+ 
+}
+#left #textCenter h1{
+  font-size: 70px;
+  font-weight: 900;
+  color: antiquewhite;
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+#left #textCenter p{
+  font-size: 20px;
+  font-weight: 300;
+  color: blanchedalmond;
+  opacity: 0.6;
+  padding: 10px;
+  line-height: 30px;
+  text-transform: initial;
+  margin: 20px ;
+}
+#textCenter{
+  text-align: center;
+}
+.buttn{
+  border: none;
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  background-color:rgb(77, 255, 0);
+  border-radius: 10px;
+  border-bottom: 4px solid black;
+  color: black;
+  opacity: 0.9;
+
+}
+.buttn:hover{
+  border: none;
+  text-transform: capitalize;
+  padding: 10px;
+  background-color:rgb(255, 234, 0);
+  border-radius: 10px;
+  border-bottom: 4px solid black;
+  color: black;
+  opacity: 1;
+}
+
+@media(max-width:780px){
+  #main{
+    flex-direction: column;
+  }
+  #main #left{
+    width: 100%;
+  }
+  #main #right{
+    width: 100%;
+  }
+}
